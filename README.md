@@ -48,8 +48,10 @@ Para efectos de este trabajo, los resultados de las metricas se encuentran en mi
 
 ## Requisitos
 
-Para ejecutar los scripts es necesario instalar las siguientes librerías:
+Esta implementación fue hecha utilizando google colab, por lo que no es necesario nada más que ejecutar las celdad en orden para que funcione correctamente. En caso de que se desee ejecutar esta implementación en un entorno local, se necesita instalar ciertas librerías para ejecutar este codigo correctamente y se realiza por medio del siguiente comando:
 
 ```bash
-pip install -r requirements.txt
+pip install pandas numpy scikit-learn matplotlib seaborn
+
+
 
