@@ -1,10 +1,10 @@
-#Comparación de Modelos de Aprendizaje Supervisado
+# Comparación de Modelos de Aprendizaje Supervisado
 
 Este respositorio contiene la implementación de la tarea 1 del taller de IA que consistía en comparar modelos de aprendizaje supervisado.
 
 ---
 
-##Problema
+## Problema
 
 Para este caso se utilizó el **California Housing Dataset**, la cual posee diversos datos proveniente del censo de 1990 en California. El obejtivo de este problema es poder predecir el valor promedio de viviendas a partir de los siguientes datos:
 
@@ -18,7 +18,7 @@ Este es un problema de regresión, ya que el valor de la vivienda es una variabl
 
 ---
 
-##Modelos utilizados
+## Modelos utilizados
 
 1. **Regresión Lineal**
 2. **Random Forest Regressor**
@@ -28,7 +28,7 @@ Los modelos fueron desarrollados de manera independiente con el fin de evitar co
 
 ---
 
-##Resultados y métricas
+## Resultados y métricas
 
 Las métricas utilizadas fueron:
 
@@ -46,7 +46,7 @@ Para efectos de este trabajo, los resultados de las metricas se encuentran en mi
 
 ---
 
-##Requisitos
+## Requisitos
 
 Para ejecutar los scripts es necesario instalar las siguientes librerías:
 
