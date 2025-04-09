@@ -1,12 +1,12 @@
-# 📊 Comparación de Modelos de Aprendizaje Supervisado — Regresión
+#Comparación de Modelos de Aprendizaje Supervisado
 
-Este proyecto corresponde a la **Tarea 1** del ramo *Taller de Inteligencia Artificial*. El objetivo es comparar el desempeño de tres modelos de aprendizaje supervisado aplicados a un problema de **regresión** usando una base de datos pública.
+Este respositorio contiene la implementación de la tarea 1 del taller de IA que consistía en comparar modelos de aprendizaje supervisado.
 
 ---
 
-## 📚 Descripción del problema
+##Problema
 
-Se utilizó el **California Housing Dataset**, una base de datos pública proveniente del censo de 1990 en California. El objetivo es **predecir el valor medio de las viviendas** en diferentes zonas geográficas, a partir de variables socioeconómicas y demográficas como:
+Para este caso se utilizó el **California Housing Dataset**, la cual posee diversos datos proveniente del censo de 1990 en California. El obejtivo de este problema es poder predecir el valor promedio de viviendas a partir de los siguientes datos:
 
 - Ingreso medio por hogar
 - Edad promedio de las viviendas
@@ -14,43 +14,29 @@ Se utilizó el **California Housing Dataset**, una base de datos pública proven
 - Población total
 - Ubicación geográfica (latitud y longitud)
 
-Este es un problema clásico de **regresión supervisada**, ya que el valor de la vivienda es una variable continua.
+Este es un problema de regresión, ya que el valor de la vivienda es una variable continua.
 
 ---
 
-## 🧠 Modelos utilizados
-
-Se entrenaron y evaluaron los siguientes modelos:
+##Modelos utilizados
 
 1. **Regresión Lineal**
 2. **Random Forest Regressor**
-3. **Support Vector Regressor (SVR)**
+3. **Support Vector Regressor**
 
-Cada modelo fue desarrollado y ejecutado por separado, respetando las buenas prácticas de preprocesamiento y evaluación.
-
----
-
-## 🗂️ Estructura del repositorio
-
+Los modelos fueron desarrollados de manera independiente con el fin de evitar confusiones, mantener un orden dentro del desarrollo y poder comparar mejor los resultados.
 
 ---
 
-## ⚙️ Preprocesamiento
-
-- Se separaron los datos en **features** (`X`) y **target** (`y`).
-- Se realizó una división en conjuntos de entrenamiento y prueba (80% - 20%).
-- Se aplicó **escalado estándar (`StandardScaler`)** a los datos para modelos sensibles a la escala (Regresión Lineal y SVR).
-- No se aplicó escalado para Random Forest, ya que no lo requiere.
-
----
-
-## 📈 Resultados y métricas
+##Resultados y métricas
 
 Las métricas utilizadas fueron:
 
 - **RMSE (Root Mean Squared Error)**: mide el error cuadrático medio.
 - **MAE (Mean Absolute Error)**: mide el error absoluto medio.
 - **R² (Coeficiente de determinación)**: mide qué tan bien el modelo explica la variabilidad del target.
+
+Para efectos de este trabajo, los resultados de las metricas se encuentran en miles de dolares. Esta información es clave para su interpretación.
 
 | Modelo            | RMSE  | MAE   | R²    |
 |-------------------|-------|-------|-------|
@@ -60,15 +46,7 @@ Las métricas utilizadas fueron:
 
 ---
 
-## ✅ Conclusiones
-
-- El **modelo Random Forest** fue el que obtuvo **mejor desempeño** general en las tres métricas.
-- El **modelo SVR** también mostró buenos resultados, mejorando significativamente respecto a la regresión lineal.
-- La **regresión lineal** tuvo el rendimiento más bajo, pero es el modelo más simple y explicable, útil como línea base.
-
----
-
-## 💻 Requisitos
+##Requisitos
 
 Para ejecutar los scripts es necesario instalar las siguientes librerías:
 
